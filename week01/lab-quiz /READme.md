@@ -1,5 +1,8 @@
 # Week 01 Lab and Quiz
-
-The lab task and assessment checklist are in `lab_assignment.md` in this folder.
-
-Use `week01/lab-quiz/` in your own repository for in-class lab and quiz work. Save `lab01_student_card.py` here. Keep separate weekly homework in `week01/` outside this folder.
+# Lab 01 - Student Profile Card
+## Test Performed
+- **Test:** Ran the script and left the name field empty by pressing Enter.
+- **Result:** The card still printed properly, but the "Name" row appeared empty ('Name: ').
+## Changes Made 
+- Tested boundary cases such as entering long input values and checked card alignment to ensure to layout remains readable.
+  
