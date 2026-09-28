@@ -13,7 +13,7 @@ subtotal = line_one + line_two
 tax = subtotal * tax_percent / 100
 final_total = subtotal + tax + shipping
 
-print()
+
 print(f" {item_one } {quantity_one } x {price_one:.2f} = {line_one:.2f}")
 print(f" {item_two } {quantity_two } x {price_two:.2f} = {line_two:.2f}")
 print(f" Subtotal: {subtotal:.2f} TRY")
