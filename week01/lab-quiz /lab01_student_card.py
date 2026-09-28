@@ -4,12 +4,11 @@ departmant = input ("Enter your departmant: ")
 github_username = input ("Enter GitHub username: ")
 goal = input ("Enter one programming goal: ")
 
-print(" " * 35)
-print("       STUDENT PROFILE CARD     ")
-print(" " * 35)
+
+print("\n---STUDENT PROFILE CARD---")
 print(f"Name : {name}")
 print(f"Student ID : {student_id}")
 print(f"Departmant : {departmant}")
 print(f"GitHub Username : {github_username}")
 print(f"Programming Goal : {goal}")
-print(" " * 35)
+
