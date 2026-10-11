@@ -24,3 +24,16 @@
   2. Age 12, Weekday, Student yes -> `120.00 TRY (Child)` (boundary: age 12, child before student)
   3. Age 26, Weekday, Student yes -> `200.00 TRY (Standard)` (boundary: age 26, student limit)
 - **Why does the order of the rules matter?** Python evaluates from top to bottom. If student was first, a 10-year-old child would wrongly get the lower student discount instead of the child discount.
+
+## AI Usage Note ~week04
+- **AI Tool Used:** Gemini
+- **Prompt Used:** "Write a Python program using input, loops, conditions, and boundary validation that calculates total travel time across multiple transit modes to see if a student will be late for class."
+- **What did you change?** I expanded the travel time calculation to include walking, bus, metro, and tram durations, comparing the total against the time remaining before class.
+- **Tests:**
+  1. **Input:** Time left: 60 mins, Walk: 10 mins, Bus: 15 mins, Metro: 15 mins, Tram: 10 mins (Total: 50 mins)
+     **Result:** YOU'LL MAKE IT! You even have enough time to grab a coffee before class.
+  2. **Input:** Time left: 30 mins, Walk: 10 mins, Bus: 15 mins, Metro: 10 mins, Tram: 5 mins (Total: 40 mins)
+     **Result:** YOU'RE LATE! Even if the bus flies you won't make it.
+  3. **Boundary Test:** Time left: -10 mins (Invalid)
+     **Result:** Prints "Invalid time! Must be between 1 and 180 minutes." and restarts the loop.
+- **Why does the order of the rules matter?** Validating each transport time immediately after user input prevents invalid negative numbers or unrealistic values from polluting the total travel sum and yielding false status results.
