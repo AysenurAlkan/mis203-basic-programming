@@ -1,4 +1,4 @@
- def main():
+def main():
     while True:
         starting_balance = float(input("Enter starting balance: "))
         if starting_balance >= 0:
